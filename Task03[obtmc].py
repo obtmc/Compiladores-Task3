@@ -114,12 +114,12 @@ def regexScan(dataRegexScan):
             if Regex.isNum(dataRegexScan[i].type):
                 j +=1;
             else:
-                print(f"ERROR:Expectative de type NUM: {dataRegexScan[i]}");
+                print(f"ERROR:Expectative of type NUM: {dataRegexScan[i]}");
                 return 0;
         elif Regex.isOP(dataRegexScan[i].type):
             j = 1; # Situação (expressão regular) Expressão desconhecida  
         else:
-            print(f"EROR:Expectative de type operator(OP): {dataRegexScan[i]}");
+            print(f"EROR:Expectative of type operator(OP): {dataRegexScan[i]}");
             return 0;
 
         i +=1;
