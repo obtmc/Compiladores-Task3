@@ -150,12 +150,12 @@ finally:
 # eliminando os '/n' copiados do arquivo de entrada
 data = [i.strip() for i in data]; 
 
-# Tokenização
+# Valida e estrutura os tokens
 scanResult = scanning(data);
     
 if scanResult:
 
-    # Regex
+    # Verifica se a expressão é bem formada
     if(regexScan(scanResult)):
         # Resolvendo a expressão
         compResult = computing(scanResult);
